@@ -4,6 +4,140 @@
     box-sizing: border-box;
 }
 
-.card-numbers-wrapper{
-    ;
+/* Numeri Casuali*/
+#card-numbers-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    width: 80%;
+    height: 200px;
+
+    margin: 1em auto;
+    padding: 2em;
+
+    background: transparent;
+}
+
+.card-numb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+
+    width: 15%;
+
+    background: rgb(36, 53, 109);
+    
+    border: 10px solid rgb(16, 22, 128);
+    border-radius: 20px;
+
+    color: white;
+}
+
+/* TIMER */
+.middle-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeout{
+    animation: timeout-animation 3s;
+}
+
+#btn-try,
+#btn-start{
+    font-size: 1em;
+    padding:0.4em 1em;
+    margin: .8em;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    cursor: pointer;
+
+    background: rgb(30, 68, 193);
+    color: white;
+}
+
+.disablebtn{
+    background: grey !important;
+    cursor: default !important;
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    margin:1em auto;
+    padding: 1em;
+
+    background: #000;
+    color: white;
+    /* -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
+}
+
+#sec{
+    font-size: 2em;
+}
+
+
+/* INPUT */
+#input-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.input-numb{
+    padding: 1em .3em;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    background: #c7bdbd;
+
+    
+}
+
+@keyframes timeout-animation{
+    0%{
+        scale:1;
+        background-color: black;
+    }
+
+    25%{
+        scale:1.01;
+        background-color: red;
+    }
+
+    50%{
+        scale:1;
+        background-color: black;
+    }
+    
+    75%{
+        scale:1.01;
+        background-color: red;
+    }
+
+    0%{
+        scale:1;
+        background-color: black;
+    }
 }
